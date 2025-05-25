@@ -7,9 +7,9 @@ To implement a complete I2C driver from scratch without using any libraries and 
 ## 🔧 Environment
 - **MCU**: ATmega2560 (Arduino Mega)
 - **Language**: Embedded C (no library used)
-- **Debugger**: Logic Analyzer (e.g., Saleae)
-- **Tool**: Arduino IDE / VS Code
-- **Simulation**: Wokwi / Proteus
+- **Debugger**: Logic Analyzer 
+- **Tool**: Arduino IDE 
+- **Simulation**: Wokwi 
 
 ## ✅ Features
 - Manual bit-banged I2C communication
