@@ -17,33 +17,21 @@ To implement a complete I2C driver from scratch without using any libraries and 
 - RTC time set and fetch functions
 - Verified via logic analyzer (SCL/SDA signals)
 
-## 📁 Project Structure
-```
-RTC_I2C_SingleFile/
-├── main.c
-├── README.md
-├── logic_analyzer/
-│   └── i2c_rtc_capture.sal
-└── images/
-    └── waveforms.png
-```
-
 ## 🧠 Function Overview
 
 ### I2C Driver
 ```c
-void i2c_start();
-void i2c_stop();
-void i2c_write(uint8_t data);
-uint8_t i2c_read(uint8_t ack);
+void I2C_start();
+void I2C_write(char);
+void I2C_delay();
+void I2C_stop();
+char I2C_read();
 ```
 
 ### RTC Functions
 ```c
-void rtc_write(uint8_t reg, uint8_t data);
-uint8_t rtc_read(uint8_t reg);
-void rtc_set_time(...);
-void rtc_get_time(...);
+void RTC_write(char,char);
+char RTC_read(char);
 ```
 
 ## 🔬 Debugging
@@ -53,12 +41,11 @@ void rtc_get_time(...);
 
 ## 💻 Example Output (UART)
 ```
-Time: 10:15:30 Date: 25/05/2024
+Time :23/59/28
 ```
 
-## 📸 Sample Logic Analyzer Capture
-![Waveform](images/waveforms.png)
+
 
 ## 🧑‍💻 Author
-Your Name  
-your.email@example.com | [GitHub](https://github.com/yourusername)
+Your Bhuvan Kumar R P 
+your.kumarrpbhuvan@gmail.com | [GitHub](https://github.com/Bhuvan-Kumar-R-P)
