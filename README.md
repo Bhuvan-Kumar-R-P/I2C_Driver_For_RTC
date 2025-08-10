@@ -2,8 +2,7 @@
 # 🕒 Bare-Metal I2C RTC Driver (Single File Implementation)
 
 ## 🎯 Objective
-To implement a complete I2C driver from scratch without using any libraries and use it to interface with a DS1307 RTC module. All code is contained in a single C file and debugged using a logic analyzer.
-
+To implement a complete I2C driver from scratch without using any libraries and use it to interface with a DS1307 RTC module. All code is contained in a single C file and debugged using a logic analyzer. RTC is connected to portf 0(SDA) 1(SCL).
 ## 🔧 Environment
 - **MCU**: ATmega2560 (Arduino Mega)
 - **Language**: Embedded C (no library used)
